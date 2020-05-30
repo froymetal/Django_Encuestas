@@ -1,0 +1,11 @@
+{% extends 'Base/base.html' %}
+
+{% block content %}
+<div class="card text-center">
+  <div class="card-body">
+    <h1>Sistema de Encuestas</h1>
+    <p>Ejemplo de sistema de encuestas con Django</p>
+    <a class="btn btn-dark" href="{% url 'polls:index' %}">Ver Encuestas</a>
+  </div>
+  </div>
+{% endblock %}

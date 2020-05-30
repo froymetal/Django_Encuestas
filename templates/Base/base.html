@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Sistema de Encuestas {% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <!-- Trae la informacion de NavBar -->
+    {% include 'Base/_navbar.html' %}
+    
+    <div class="card text-center">
+      <div class="card-header">
+        <h4>Selección de encuestas</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6 m-auto">
+            {% block content %}{% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
